@@ -9,4 +9,12 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'cmpm17-resume-activity';
+
+  currentUserName: string = 'Jialai';
+
+  currentYear: number = 2026;
+
+  isYearCurrentYear(): boolean {
+    return this.currentYear === 2026;
+  }
 }

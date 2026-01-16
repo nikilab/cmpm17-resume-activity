@@ -17,4 +17,16 @@ export class AppComponent {
   isYearCurrentYear(): boolean {
     return this.currentYear === 2026;
   }
+
+  handleClick() {
+    console.log("Button has been clicked!");
+  }
+
+  onKeyPress(event:KeyboardEvent){
+    console.log("Key Pressed: ", event.key);
+  }
+
+  navigateToWebsite(){
+    window.open("https://google.com");
+  }
 }

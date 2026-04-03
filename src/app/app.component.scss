@@ -1,11 +1,17 @@
 :host {
-  .welcome-tag {
+
+  .my-name{
     max-width: 760px;
     margin-top: 15px;
     padding: 1rem 1.4rem;
     border-radius: 14px;
-    color: #1d2d2c;
+    color: #dce2d6;
     font-size: 25px;
-    background-color: rgb(223, 255, 196);
+    background-color: rgb(99, 12, 42);
   }
+  .skills-text{
+    color: #352720;
+    font-size: 15px;
+  }
+  
 }

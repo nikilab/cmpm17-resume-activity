@@ -8,13 +8,20 @@
     color: #dce2d6;
     font-size: 25px;
     background-color: rgb(99, 12, 42);
+    &:hover{
+      color: #352720;
+    }
   }
+
   .skills-text{
     color: #352720;
     font-size: 15px;
   }
-  .container{
-    background-color:rgb(154, 148, 141);
+
+  container{
+    background-color: rgb(55, 46, 34);
   }
+
+  
   
 }

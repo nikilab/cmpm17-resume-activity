@@ -1,21 +1,41 @@
 
     <!-- Go ahead and add your name -->
     <!-- Add a picture of yourself -->
-    <div class="my-name">Nikila Bashyam</div>
+    <div class="my-name">{{name}}</div>
     <img src= "images/me.jpeg"/>
     <div class="titles">
         <h1>Skills</h1>
         <div class="skills-text">
+
             <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>C</li>
-                <li>Taking Naps</li>
+                @for (item of skills; track item) {
+                    <li>{{ item }}</li>
+                } 
             </ul>
+
         </div>
         <h1>Experience</h1>
+        @if (hasprevexperience()){
+        <div> I have previous experience !!!!!!! hire me !!!!!</div>
+        }
         <div class="exp-text">
-            Pricer, The Echo Shop
+            <ul>
+                @for (item of prevexperience; track item) {
+                    <li>{{ item }}</li>
+                } 
+            </ul>
         </div>
+
+        <mat-accordion>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                <mat-panel-title> Nikki's Courses </mat-panel-title>
+                </mat-expansion-panel-header>
+                <ul><li>CMPM 17</li>
+                    <li>CSE 13</li> 
+                    <li>AM 10</li>   </ul>
+            </mat-expansion-panel>
+        </mat-accordion>
     </div> 
+    
 

@@ -1,4 +1,5 @@
-
+<router-outlet></router-outlet>
+    <button (click)="nextpage()">Next</button>
     <!-- Go ahead and add your name -->
     <!-- Add a picture of yourself -->
     <div class="my-name">{{name}}</div>
@@ -36,6 +37,15 @@
                     <li>AM 10</li>   </ul>
             </mat-expansion-panel>
         </mat-accordion>
+
+        <div class = working-experience>
+            <h1>Working Experience</h1>
+            @for (experience of experiences; track experience.__id){
+                <ul>
+                    <li>{{  experience.name }}</li>
+                </ul>
+            }
+        </div>
     </div> 
     
 
